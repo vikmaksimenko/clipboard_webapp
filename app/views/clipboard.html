@@ -1,0 +1,31 @@
+<md-content class='md-padding' layout="column">
+  <div class="col-md-8 col-md-offset-2">
+    <md-card ng-repeat="user in ['Fabio', 'Leonardo', 'Thomas', 'Gabriele', 'Fabrizio', 'John', 'Luis', 'Kate', 'Max']">
+      <!--<md-card-title>-->
+        <!--<h2>{{user}}</h2>-->
+      <!--</md-card-title>-->
+      <md-card-content>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p ng-show="user == 'Fabio'">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor itaque minus odio non et, vitae similique fugit natus magni deleniti. Illum, id quasi dolores incidunt! Expedita illum, autem rerum esse.</p>
+      </md-card-content>
+      <md-card-actions class="md-actions" layout="row" layout-align="start center">
+        <md-card-icon-actions>
+          <md-button class="md-icon-button" aria-label="Share">
+            <md-icon md-font-set="material-icons">content_paste</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Favourites">
+            <md-icon md-font-set="material-icons">favorite_border</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Delete">
+            <md-icon md-font-set="material-icons">delete</md-icon>
+          </md-button>
+        </md-card-icon-actions>
+        <p>
+          <b>Submitted: </b>
+          <i>date</i>
+        </p>
+      </md-card-actions>
+    </md-card>
+  </div>
+</md-content>
+
